@@ -1,0 +1,20 @@
+[
+  {
+    "remote": "github",
+    "repository":  "rakeshraimca/OXYGEN_NOUGAT_KERNEL",
+    "target_path": "kernel/xiaomi/oxygen",
+    "branch": "master"
+  },
+  {
+    "remote": "github",
+    "repository":  "eva0034/vendor_xiaomi_oxygen",
+    "target_path": "vendor/xiaomi/oxygen",
+    "branch": "7.x"
+  },
+  {
+    "remote": "github",
+    "repository": "LineageOS/android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings",
+    "branch": "cm-14.1"
+  }
+[
