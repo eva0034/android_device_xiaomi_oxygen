@@ -8,3 +8,6 @@ vendor.camera.aux.packagelist=com.android.camera,com.google.android.Pixel3Mod
 
 # Radio
 persist.radio.aosp_usr_pref_sel=true
+
+# Fix Cast/Miracast
+persist.sys.wfd.virtual=0
