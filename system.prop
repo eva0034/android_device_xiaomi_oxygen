@@ -6,5 +6,5 @@
 persist.camera.HAL3.enabled=1
 vendor.camera.aux.packagelist=com.android.camera,com.google.android.Pixel3Mod
 
-# Fix Cast/Miracast
-persist.sys.wfd.virtual=0
+# Radio
+persist.radio.aosp_usr_pref_sel=true
