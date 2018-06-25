@@ -1,0 +1,32 @@
+[
+  {
+    "repository":  "device_xiaomi_msm8953-common",
+    "target_path": "device/xiaomi/msm8953-common"
+  },
+  {
+    "repository":  "rakeshraimca/Hardrock_kernel",
+    "target_path": "kernel/xiaomi/msm8953"
+  },
+  {
+    "repository":  "vendor_xiaomi_oxygen",
+    "target_path": "vendor/xiaomi"
+  },
+  {
+    "remote":      "github",
+    "repository":  "LineageOS/android_external_bson",
+    "target_path": "external/bson",
+    "branch":      "cm-14.1"
+  },
+  {
+    "remote":      "github",
+    "repository":  "LineageOS/android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings",
+    "branch":      "lineage-15.0"
+  },
+  {
+    "remote":      "github",
+    "repository":  "LineageOS/android_external_sony_boringssl-compat",
+    "target_path": "external/sony/boringssl-compat",
+    "branch":      "lineage-15.0"
+  }
+]
