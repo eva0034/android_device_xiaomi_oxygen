@@ -276,6 +276,15 @@ vendor/lib/libchromatix_oxygen_s5k5e8_qtech_snapshot.so
 vendor/lib/libchromatix_oxygen_s5k5e8_qtech_video_full.so
 vendor/lib/libchromatix_oxygen_s5k5e8_qtech_zsl_preview.so
 vendor/lib/libchromatix_oxygen_s5k5e8_qtech_zsl_video.so
+vendor/lib/libchromatix_ov12a10_arc_4k_video_dw9763.so
+vendor/lib/libchromatix_ov12a10_arc_default_video_dw9763.so
+vendor/lib/libchromatix_ov12a10_arc_hfr_60_dw9763.so
+vendor/lib/libchromatix_ov12a10_arc_zsl_video_dw9763.so
+vendor/lib/libchromatix_s5k5e8_ofilm_default_video_3a.so
+vendor/lib/libchromatix_s5k5e8_ofilm_hfr_60_3a.so
+vendor/lib/libchromatix_s5k5e8_ofilm_hfr_90_3a.so
+vendor/lib/libchromatix_s5k5e8_ofilm_hfr_120_3a.so
+vendor/lib/libchromatix_s5k5e8_ofilm_zsl_video_3a.so
 
 # Camera configs
 etc/camera/camera_config.xml:vendor/etc/camera/camera_config.xml
