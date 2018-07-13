@@ -14,17 +14,20 @@
 # limitations under the License.
 #
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, device/xiaomi/oxygen/full_oxygen.mk)
 
-# Inherit from oxygen device
-$(call inherit-product, device/xiaomi/oxygen/device.mk)
+# Inherit some common Havoc-OS stuff.
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
-# Device identifier. This must come after all inclusions
-TARGET_VENDOR := Xiaomi
-PRODUCT_DEVICE := oxygen
-PRODUCT_NAME := full_oxygen
-PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Mi MAX 2
-PRODUCT_MANUFACTURER := Xiaomi
+TARGET_BOOT_ANIMATION_RES := 1080
+
+PRODUCT_NAME := havoc_oxygen
+BOARD_VENDOR := Xiaomi
+
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="oxygen-user 7.1.1 NMF26F V9.5.5.0.NDDMIFA release-keys"
+
+# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
+BUILD_FINGERPRINT := "Xiaomi/oxygen/oxygen:7.1.1/NMF26F/V9.5.5.0.NDDMIFA:user/release-keys"
