@@ -16,10 +16,10 @@
 
 $(call inherit-product, device/xiaomi/oxygen/full_oxygen.mk)
 
-# Inherit some common AEX stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+# Inherit some common Havoc-OS stuff.
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
-PRODUCT_NAME := aosp_oxygen
+PRODUCT_NAME := havoc_oxygen
 BOARD_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
