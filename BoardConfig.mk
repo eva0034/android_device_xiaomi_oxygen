@@ -21,8 +21,13 @@ DEVICE_PATH := device/xiaomi/oxygen
 # Enable real time lockscreen charging current values
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 
+# Filesystem
+BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+TARGET_COPY_OUT_VENDOR := vendor
+
 # Kernel
-TARGET_KERNEL_CONFIG := hardrock_oxygen_defconfig
+TARGET_KERNEL_CONFIG := silicon_oxygen_defconfig
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
@@ -42,6 +47,11 @@ TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 # Shims
 TARGET_LD_SHIM_LIBS += \
     /system/vendor/lib/libmmcamera_ppeiscore.so|libshim_camera.so
+
+# Treble
+BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
+PRODUCT_FULL_TREBLE_OVERRIDE := true
+PRODUCT_COMPATIBILITY_MATRIX_LEVEL_OVERRIDE := 27
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/oxygen/BoardConfigVendor.mk
