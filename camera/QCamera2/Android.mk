@@ -56,6 +56,9 @@ LOCAL_CFLAGS += -DSYSTEM_HEADER_PREFIX=sys
 
 LOCAL_CFLAGS += -DHAS_MULTIMEDIA_HINTS -D_ANDROID
 
+ifeq ($(TARGET_USES_AOSP),true)
+LOCAL_CFLAGS += -DVANILLA_HAL
+endif
 
 ifeq (1,$(filter 1,$(shell echo "$$(( $(PLATFORM_SDK_VERSION) <= 23 ))" )))
 LOCAL_CFLAGS += -DUSE_HAL_3_3
@@ -79,8 +82,8 @@ LOCAL_C_INCLUDES := \
         $(LOCAL_PATH)/util \
         $(LOCAL_PATH)/HAL3 \
         hardware/libhardware/include/hardware \
-        hardware/qcom/media-caf-msm8996/libstagefrighthw \
-        hardware/qcom/media-caf-msm8996/mm-core/inc \
+        $(call project-path-for,qcom-media)/libstagefrighthw \
+        $(call project-path-for,qcom-media)/mm-core/inc \
         system/core/include/cutils \
         system/core/include/system \
         system/media/camera/include/system
@@ -105,12 +108,12 @@ ifneq (,$(filter msm8996 msmcobalt msmfalcon,$(TARGET_BOARD_PLATFORM)))
     LOCAL_CFLAGS += -DUBWC_PRESENT
 endif
 
-LOCAL_STATIC_LIBRARIES := libqcamera2_util
+#LOCAL_STATIC_LIBRARIES := libqcamera2_util
 LOCAL_C_INCLUDES += \
         $(TARGET_OUT_HEADERS)/qcom/display
 LOCAL_C_INCLUDES += \
-        hardware/qcom/display-caf-msm8996/libqservice
-LOCAL_SHARED_LIBRARIES := libcamera_client liblog libhardware libutils libcutils libdl libsync libgui
+        $(call project-path-for,qcom-display)/libqservice
+LOCAL_SHARED_LIBRARIES := liblog libhardware libutils libcutils libdl libsync
 LOCAL_SHARED_LIBRARIES += libmmcamera_interface libmmjpeg_interface libui libcamera_metadata
 LOCAL_SHARED_LIBRARIES += libqdMetaData libqservice libbinder
 LOCAL_SHARED_LIBRARIES += libcutils libdl
