@@ -41,10 +41,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := "Xiaomi/oxygen/oxygen:7.1.1/NMF26F/V9.5.5.0.NDDMIFA:user/release-keys"
 
-# Gapps
-GAPPS_VARIANT := nano
-TARGET_GAPPS_ARCH := arm64
-CUSTOM_BUILD_TYPE := UNOFFICIAL
-
-# Animation Bootanimation res
-TARGET_BOOT_ANIMATION_RES := 1080
