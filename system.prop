@@ -8,3 +8,6 @@ vendor.camera.aux.packagelist=com.android.camera,com.google.android.Pixel3Mod
 -
 # Fix Cast/Miracast
 persist.sys.wfd.virtual=0
+
+#FP
+ro.fingerprint.cleanup.unused=false
