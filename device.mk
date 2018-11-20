@@ -15,6 +15,7 @@
 #
 
 $(call inherit-product, vendor/xiaomi/oxygen/oxygen-vendor.mk)
+$(call inherit-product, vendor/xiaomi/MiuiCamera/config.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n.mk)
 
 # Overlay
