@@ -1372,6 +1372,14 @@
         <ctl name="SPK Mixer SPK" value="1" />
         <ctl name="RCV Mixer RCV" value="1" />
     </path>
+   
+    <path name="handset">
+        <ctl name="RX1 MIX1 INP1" value="RX1" />
+        <ctl name="RDAC2 MUX" value="RX1" />
+        <ctl name="RX1 Digital Volume" value="93" />
+        <ctl name="EAR PA Gain" value="POS_6_DB" />
+        <ctl name="EAR_S" value="Switch" />
+    </path>
 
    <path name="speaker-mic">
         <path name="adc1" />
