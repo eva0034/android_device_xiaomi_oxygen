@@ -22,11 +22,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/oxygen/device.mk)
 
 # Inherit some common aosp  stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/dot/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := oxygen
-PRODUCT_NAME := arrow_oxygen
+PRODUCT_NAME := dot_oxygen
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi Max 2
 PRODUCT_MANUFACTURER := Xiaomi
@@ -39,5 +39,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
             PRIVATE_BUILD_DESC="oxygen-user 7.1.1 NMF26F 8.11.8 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "google/taimen/taimen:9/PPR2.181005.003/4984323:user/release-keys"
+BUILD_FINGERPRINT := "Xiaomi/oxygen/oxygen:7.1.1/NMF26F/8.11.8:user/release-keys"
 
