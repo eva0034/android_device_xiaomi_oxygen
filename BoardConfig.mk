@@ -37,7 +37,9 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 25765043200 # 25765059584 - 16384
 BOARD_VENDORIMAGE_PARTITION_SIZE := 872415232
 
 # Power
-TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
+#TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
+# DT2W
+TARGET_TAP_TO_WAKE_NODE := "/sys/android_touch/doubletap2wake"
 
 # Properties
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
