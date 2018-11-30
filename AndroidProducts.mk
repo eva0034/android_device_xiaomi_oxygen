@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/dot_oxygen.mk
+    $(LOCAL_DIR)/arrow_oxygen.mk
