@@ -1290,7 +1290,7 @@
 
     <path name="main-mic">
         <path name="adc1" />
-        <ctl name="IIR1 INP1 MUX" value="DEC1" />
+	<ctl name="IIR1 INP1 MUX" value="DEC1" />
     </path>
 
     <path name="top-mic">
@@ -1347,7 +1347,9 @@
 
     <path name="handset-mic">
         <path name="adc1" />
-        <ctl name="IIR1 INP1 MUX" value="DEC1" />
+	<ctl name="IIR1 INP1 MUX" value="DEC1" />
+	 <ctl name="DEC1 Volume" value="96" />
+         <ctl name="DEC2 Volume" value="96" />
     </path>
 
     <path name="headphones">
@@ -1365,7 +1367,9 @@
     <path name="headset-mic">
         <path name="adc2" />
         <ctl name="ADC2 MUX" value="INP2" />
-        <ctl name="IIR1 INP1 MUX" value="DEC1" />
+	<ctl name="IIR1 INP1 MUX" value="DEC1" />
+	 <ctl name="DEC1 Volume" value="89" />
+        <ctl name="DEC2 Volume" value="89" />
     </path>
 
     <path name="sidetone-iir">
@@ -1538,7 +1542,9 @@
     </path>
 
     <path name="handset-stereo-dmic-ef">
-        <path name="speaker-dmic-endfire" />
+	    <path name="speaker-dmic-endfire" />
+	<ctl name="DEC1 Volume" value="96" />
+        <ctl name="DEC2 Volume" value="96" />
     </path>
 
     <path name="speaker-stereo-dmic-ef">
