@@ -1338,7 +1338,8 @@
    </path>
 
     <path name="handset">
-        <ctl name="RCV Mixer RCV" value="1" />
+	    <ctl name="RCV Mixer RCV" value="1" />
+	     <ctl name="RX1 Digital Volume" value="90" />
     </path>
 
     <path name="receiver">
@@ -1382,7 +1383,7 @@
 
     <path name="sidetone-handset">
         <path name="sidetone-iir" />
-        <ctl name="IIR1 INP1 Volume" value="53" />
+        <ctl name="IIR1 INP1 Volume" value="57" />
         <ctl name="RX1 MIX2 INP1" value="IIR1" />
     </path>
 
@@ -1392,7 +1393,8 @@
 
     <path name="voice-handset">
         <path name="handset" />
-        <ctl name="TAS2560 Receiver DAC Volume" value="12db" />
+	<ctl name="TAS2560 Receiver DAC Volume" value="12db" />
+	<ctl name="RX1 Digital Volume" value="88" />
     </path>
 
     <path name="voice-speaker">
