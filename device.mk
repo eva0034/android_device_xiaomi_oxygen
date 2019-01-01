@@ -16,7 +16,6 @@
 
 $(call inherit-product, vendor/xiaomi/oxygen/oxygen-vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
-$(call inherit-product, vendor/xiaomi/Miuicamera/config.mk)
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
