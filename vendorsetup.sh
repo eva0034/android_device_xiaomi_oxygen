@@ -1,2 +1,2 @@
-add_lunch_combo havoc_oxygen-userdebug
-add_lunch_combo havoc_oxygen-eng
+add_lunch_combo aosp_oxygen-userdebug
+add_lunch_combo aosp_oxygen-eng
